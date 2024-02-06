@@ -1,4 +1,4 @@
-#TituloPrincipal{
+/*#TituloPrincipal{
     color:blue;
     font-family: sans-serif;
 }
@@ -9,5 +9,39 @@
 }
 p{
     background-color: crimson;
+    
+}
+a:link{
+    color:brown;
+}
+
+a:visited{
+    color:chartreuse;
+    background-color:  darkmagenta;
+}
+a:hover{
+    background-color:aqua;
+    color:darkmagenta;
+    border-radius: 25px;
+}
+a:active{
+    background-color: coral;
+    color:black;
+}
+
+p:nth-child(odd){
+    background-color:aqua;
+}*/
+
+.contenedor{
+    top: 12%;
+    left: 0;
+    height: 78%;
+    background-color: yellowgreen;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    
     
 }
