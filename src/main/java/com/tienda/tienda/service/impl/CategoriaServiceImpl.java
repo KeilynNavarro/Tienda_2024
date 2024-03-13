@@ -40,6 +40,14 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Transactional
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
+        
+    }
+    
+    @Override
+    @Transactional
+    public List<Categoria> buscarPorDescripcion (String descripcion){
+        return categoriaDao.findByDescripcion(descripcion);
+        
     }
 
 }
