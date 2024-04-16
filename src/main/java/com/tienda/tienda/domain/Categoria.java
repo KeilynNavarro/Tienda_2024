@@ -14,6 +14,10 @@ public class Categoria implements Serializable{
     
     private static final long serialVersionUID = 1L;
     
+      @OneToMany
+    @JoinColumn(name= "id_categoria", insertable = false, updatable = false)
+    List<Producto> productos;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_categoria")
@@ -21,12 +25,7 @@ public class Categoria implements Serializable{
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
-    
-    @OneToMany
-    @JoinColumn(name= "id_categoria", insertable = false, updatable = false)
-    List<Producto> productos;
-    
-
+   
 
     public Categoria() {
     }
