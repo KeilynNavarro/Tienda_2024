@@ -30,16 +30,17 @@ public class ProductoServiceImpl implements ProductoService {
         return productoDao.findById(producto.getIdProducto()).orElse(null);
     }
 
-    @Override
-    @Transactional
-    public void save(Producto producto) {
-        productoDao.save(producto);
-    }
-
+ 
     @Override
     @Transactional
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
-
+    
+    
+      @Override
+    @Transactional
+    public void save(Producto producto) {
+        productoDao.save(producto);
+    }
 }

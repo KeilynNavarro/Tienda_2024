@@ -1,7 +1,7 @@
 
 package com.tienda.tienda.service.impl;
 
-import com.tienda.service.ReporteService;
+import com.tienda.tienda.service.ReporteService;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
